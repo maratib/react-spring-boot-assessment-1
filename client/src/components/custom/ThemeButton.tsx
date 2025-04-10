@@ -1,5 +1,5 @@
-import { Moon, Sun } from "@/components/custom/Icons";
 import { useTheme } from "@/states/theme/ThemeContext";
+import { MoonIcon, SunIcon } from "lucide-react";
 import { FC } from "react";
 
 type Props = {
@@ -20,7 +20,7 @@ export const ThemeButton: FC<Props> = ({}) => {
         onClick={toggleTheme}
         className="p-2 rounded-lg border border-white/30 bg-[#1F2937] hover:bg-[#374151] dark:bg-[#1F2937] dark:hover:bg-[#374151] text-white transition duration-300 flex items-center justify-center"
       >
-        {theme === "dark" ? <Sun /> : <Moon />}
+        {theme === "dark" ? <SunIcon /> : <MoonIcon />}
       </button>
     </>
   );
